@@ -8,12 +8,14 @@ namespace ConsoleApp10
 {
     internal class Ejemplo
     {
-        // C# easy mode
-        public int id;
-        public string name;
+        //standard
+        private int id;
+        // defino props
+        private string name;
+        // uso las props
+        public string Name {  get; set; }
 
 
-        //agnostic
         public int getId()
         {
             return this.id;
@@ -23,5 +25,7 @@ namespace ConsoleApp10
         {
             this.id = id;
         }
+
+
     }
 }
